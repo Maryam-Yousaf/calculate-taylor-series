@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+int cost,sell,result;
+printf("enter cost price");
+scanf("%d",&cost);
+printf("enter selling price");
+scanf("%d",&sell);
+result=sell-cost;
+if(result>0)
+{
+printf("the profit is=%d",result);
+}
+if(result<0)
+{
+printf("the loss is=%d",result);
+}
+else
+printf("no loss");
+
+}
