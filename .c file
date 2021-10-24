@@ -1,0 +1,50 @@
+/* evaluate value of y */
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int x=0,n=0,fact=1,a=2;
+     float y=0,k=1 ;
+	printf("Enter the value of x");
+	scanf("%d",&x);
+	printf("Enter the value of n");
+	scanf("%d",&n);
+  /* condition to check if value entered is odd or not */
+
+	if (n%2==1)
+
+	{
+       for (int i=1; i<=n; i=i+2)
+		{
+			for (int j=i; j>= 1; j--)
+			{
+
+				fact =fact*j;
+				k= k*x;
+			}
+
+			if (a%2==0)
+			{
+				y = y+(k/fact);
+				a++;
+			}
+
+			else
+			{
+				y = y -(k/fact);
+				a++;
+			}
+			fact=1;
+			k=1;
+		}
+
+		printf("y= %f ",y);
+	}
+}
+
+
+
+
+
+
